@@ -46,7 +46,6 @@ function App() {
   return (
     <div className="min-h-screen bg-[#0e1320] text-[#dee2f5] font-['Inter'] selection:bg-[#8B5CF6]/30 px-4 md:px-12 py-10 flex flex-col items-center">
 
-      {/* 🚀 1. ARCHitectural Header */}
       <header className="max-w-5xl w-full mb-16 flex flex-col md:flex-row items-baseline justify-between gap-4 border-b border-[#494454]/20 pb-8">
         <div className="space-y-1">
           <h1 className="text-5xl md:text-6xl font-['Space_Grotesk'] font-bold tracking-tight text-[#d0bcff]">
@@ -63,10 +62,8 @@ function App() {
 
       <main className="max-w-5xl w-full grid grid-cols-1 lg:grid-cols-12 gap-10 flex-grow">
 
-        {/* 📚 2. CRYPTOGRAPHIC INSIGHT CORNER (Asymmetrical placement) */}
         <div className="lg:col-span-12">
           <section className="relative overflow-hidden bg-[#161b29]/60 backdrop-blur-3xl border border-[#494454]/30 p-10 rounded-[2rem] shadow-2xl group">
-            {/* Decorative Background Accents */}
             <div className="absolute -top-24 -right-24 w-64 h-64 bg-[#d0bcff]/5 rounded-full blur-[100px] group-hover:bg-[#d0bcff]/10 transition-all duration-500"></div>
             <div className="absolute top-0 left-0 w-1.5 h-12 bg-[#8B5CF6] rounded-full mt-10 ml-0"></div>
 
@@ -84,7 +81,6 @@ function App() {
           </section>
         </div>
 
-        {/* 📟 3. SOURCE INPUT TERMINAL */}
         <div className="lg:col-span-7 space-y-4">
           <div className="bg-[#161b29] rounded-[2.5rem] border border-[#494454]/20 p-8 shadow-xl relative group h-full">
             <div className="flex justify-between items-center mb-6">
@@ -105,9 +101,7 @@ function App() {
           </div>
         </div>
 
-        {/* 🎚️ 4. ALGORITHM CONTROLLER & OUTPUT */}
         <div className="lg:col-span-5 flex flex-col gap-8">
-          {/* Segmented Controller */}
           <div className="bg-[#1a1f2d] border border-[#494454]/30 p-4 rounded-[1.5rem] shadow-lg">
             <label className="text-[9px] font-['Space_Grotesk'] font-bold text-[#cbc3d7]/40 uppercase tracking-[0.2em] mb-4 block ml-2">
               Select Logic Matrix
@@ -118,8 +112,8 @@ function App() {
                   key={type}
                   onClick={() => setHashType(type)}
                   className={`py-3 rounded-xl font-['Space_Grotesk'] text-[11px] font-bold uppercase tracking-[0.1em] transition-all duration-300 relative overflow-hidden group/btn ${hashType === type
-                      ? 'bg-gradient-to-br from-[#d0bcff] to-[#a078ff] text-[#0e1320] shadow-[0_4px_15px_rgba(208,188,255,0.3)]'
-                      : 'bg-[#090e1b] text-[#cbc3d7]/60 hover:text-white border border-[#494454]/10'
+                    ? 'bg-gradient-to-br from-[#d0bcff] to-[#a078ff] text-[#0e1320] shadow-[0_4px_15px_rgba(208,188,255,0.3)]'
+                    : 'bg-[#090e1b] text-[#cbc3d7]/60 hover:text-white border border-[#494454]/10'
                     }`}
                 >
                   {type}
@@ -128,7 +122,6 @@ function App() {
             </div>
           </div>
 
-          {/* Result Terminal */}
           <div className={`flex-grow transition-all duration-700 transform ${hashResult ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4'}`}>
             <div className="bg-[#090e1b] border-l-2 border-[#d0bcff] p-8 rounded-[1.5rem] shadow-2xl h-full flex flex-col">
               <div className="flex justify-between items-center mb-6">
@@ -163,7 +156,6 @@ function App() {
         </div>
       </main>
 
-      {/* 🏁 5. BRANDED CREDITS FOOTER */}
       <footer className="max-w-5xl w-full mt-24 pt-12 border-t border-[#494454]/20 flex flex-col items-center gap-6">
         <p className="text-[11px] font-['Space_Grotesk'] font-bold text-[#cbc3d7]/30 uppercase tracking-[0.5em]">
           Built by ADITYA KUMAR SINGH
@@ -174,7 +166,6 @@ function App() {
           rel="noopener noreferrer"
           className="group/github relative p-4 rounded-full transition-all duration-500"
         >
-          {/* Animated Background Ring */}
           <div className="absolute inset-0 rounded-full border border-[#d0bcff]/0 group-hover/github:border-[#d0bcff]/40 group-hover/github:scale-125 transition-all duration-700"></div>
 
           <svg className="w-10 h-10 text-[#494454] group-hover/github:text-[#d0bcff] transition-all duration-500 relative z-10" fill="currentColor" viewBox="0 0 24 24">
